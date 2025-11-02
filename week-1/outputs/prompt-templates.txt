@@ -1,0 +1,20 @@
+
+Consise Prompt:
+
+You are an experienced Linux/VMware system administrator.
+Summarize the main issues and warnings in the following log file:
+LOG:
+{log_data[:3000]}
+
+
+Detailed Prompt:
+
+You are a senior VMware and Linux system administrator. 
+Review the following system logs and identify key issues, warnings, and potential root causes. 
+Summarize them clearly in Markdown format with sections:
+- Key Issues
+- Warnings
+- Root Causes
+- Recommendations
+LOG:
+{log_data[:5000]}

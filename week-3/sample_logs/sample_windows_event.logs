@@ -1,0 +1,151 @@
+LogName=Security
+SourceName=Microsoft-Windows-Security-Auditing
+EventCode=4625
+EventType=0
+Type=Failure Audit
+ComputerName=WIN-DC01
+TaskCategory=Logon
+RecordNumber=20001
+TimeGenerated=2025-10-29 08:15:23
+Message=An account failed to log on.
+   Logon Type: 3
+   Account Name: admin
+   Failure Reason: Unknown user name or bad password
+
+LogName=Security
+SourceName=Microsoft-Windows-Security-Auditing
+EventCode=4624
+EventType=0
+Type=Success Audit
+ComputerName=WIN-DC01
+TaskCategory=Logon
+RecordNumber=20002
+TimeGenerated=2025-10-29 08:16:01
+Message=An account was successfully logged on.
+   Logon Type: 2
+   Account Name: jsmith
+   Security ID: S-1-5-21-1234567890-123456789-123456789-1101
+
+LogName=Security
+SourceName=Microsoft-Windows-Security-Auditing
+EventCode=4672
+EventType=0
+Type=Success Audit
+ComputerName=WIN-DC01
+TaskCategory=Special Logon
+RecordNumber=20003
+TimeGenerated=2025-10-29 08:16:05
+Message=Special privileges assigned to new logon.
+   Privileges: SeDebugPrivilege SeTcbPrivilege
+
+LogName=System
+SourceName=Service Control Manager
+EventCode=7031
+EventType=1
+Type=Error
+ComputerName=WIN-SRV01
+RecordNumber=31001
+TimeGenerated=2025-10-29 09:02:44
+Message=The SQL Server (MSSQLSERVER) service terminated unexpectedly. It has done this 2 time(s). The following corrective action will be taken in 60000 milliseconds: Restart the service.
+
+LogName=System
+SourceName=Service Control Manager
+EventCode=7000
+EventType=1
+Type=Error
+ComputerName=WIN-SRV01
+RecordNumber=31002
+TimeGenerated=2025-10-29 09:03:12
+Message=The Windows Update service failed to start due to the following error: The service did not respond to the start or control request in a timely fashion.
+
+LogName=System
+SourceName=Microsoft-Windows-Kernel-Power
+EventCode=41
+EventType=1
+Type=Critical
+ComputerName=WIN-SRV01
+RecordNumber=31003
+TimeGenerated=2025-10-29 09:05:01
+Message=The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly.
+
+LogName=System
+SourceName=Disk
+EventCode=51
+EventType=1
+Type=Warning
+ComputerName=WIN-SRV02
+RecordNumber=31004
+TimeGenerated=2025-10-29 09:06:45
+Message=An error was detected on device \Device\Harddisk0\DR0 during a paging operation.
+
+LogName=Application
+SourceName=Application Error
+EventCode=1000
+EventType=2
+Type=Error
+ComputerName=WIN-APP01
+RecordNumber=40001
+TimeGenerated=2025-10-29 10:12:17
+Message=Faulting application name: payroll.exe, version: 2.3.1.0
+Faulting module name: ntdll.dll, version: 10.0.19041.546
+Exception code: 0xc0000374
+
+LogName=Application
+SourceName=Application Hang
+EventCode=1002
+EventType=2
+Type=Error
+ComputerName=WIN-APP01
+RecordNumber=40002
+TimeGenerated=2025-10-29 10:13:05
+Message=The program outlook.exe version 16.0 stopped interacting with Windows and was closed.
+
+LogName=Application
+SourceName=.NET Runtime
+EventCode=1026
+EventType=2
+Type=Error
+ComputerName=WIN-APP02
+RecordNumber=40003
+TimeGenerated=2025-10-29 10:14:22
+Message=Application: hrportal.exe
+Framework Version: v4.0.30319
+Description: The process was terminated due to an unhandled exception.
+Exception Info: System.NullReferenceException
+
+LogName=Application
+SourceName=MSSQLSERVER
+EventCode=18456
+EventType=2
+Type=Error
+ComputerName=WIN-DB01
+RecordNumber=40004
+TimeGenerated=2025-10-29 10:15:11
+Message=Login failed for user 'sa'. Reason: Password did not match that for the login provided.
+
+LogName=Security
+SourceName=Microsoft-Windows-Security-Auditing
+EventCode=4648
+EventType=0
+Type=Failure Audit
+ComputerName=WIN-DC01
+RecordNumber=20004
+TimeGenerated=2025-10-29 10:20:44
+Message=A logon attempt was made with explicit credentials.
+   Account Name: attacker
+   Target Server: WIN-DC01
+   Failure Reason: Unknown user name or bad password
+
+LogName=System
+SourceName=Service Control Manager
+EventCode=7045
+EventType=1
+Type=Information
+ComputerName=WIN-SRV03
+RecordNumber=31005
+TimeGenerated=2025-10-29 10:25:33
+Message=A service was installed in the system.
+   Service Name: suspicioussvc
+   Service File Name: C:\Temp\suspicious.exe
+   Service Type: user mode service
+   Start Type: auto start

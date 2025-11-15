@@ -1,0 +1,6 @@
+TimeCreated,ProviderName,Id,LevelDisplayName,Message
+2025-10-25 10:01:15,Application Error,1000,Error,"Faulting application name: outlook.exe, version: 16.0.1.2345, faulting module name: ntdll.dll"
+2025-10-25 10:05:30,Security,4625,Audit Failure,"An account failed to log on. Subject: user=svc_backup, failure reason: Unknown user name or bad password."
+2025-10-25 10:15:00,System,7000,Error,"The DHCP Client service failed to start due to the following error: The system cannot find the file specified."
+2025-10-25 10:20:45,Application,1026,Information,"Product: Microsoft Office Professional Plus 2019 -- Configuration completed successfully."
+2025-10-25 10:35:10,Security,4720,Audit Success,"A user account was created. Subject: user=Administrator, Target: user=jdoe_temp"
